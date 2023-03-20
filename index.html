@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="pCard_card">
+        <div class="pCard_up">
+            <div class="pCard_text">
+                <h2>Ali Ahmed Kurd</h2>
+                <p>Adovcate High Court</p>
+            </div>
+            <div class="pCard_add"><i class="fa fa-angle-down"></i></div>
+        </div>
+        <div class="pCard_down">
+            <div>
+                <p>Projects</p>
+                <p>126</p>
+            </div>
+            <div>
+                <p>Views</p>
+                <p>21,579</p>
+            </div>
+            <div>
+                <p>Likes</p>
+                <p>1,976</p>
+            </div>
+        </div>
+        <div class="pCard_back">
+            <p>See My Latest Work Here</p>
+            <a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a>
+            <a href="#"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+            <a href="#"><i class="fa fa-behance fa-2x fa-fw"></i></a> <br>
+            <a href="#"><i class="fa fa-codepen fa-2x fa-fw"></i></a>
+            <a href="#"><i class="fa fa-dribbble fa-2x fa-fw"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+            <p>Follow Me!</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+        $(function () {
+            "use strict";
+            $(".pCard_add").click(function () {
+                $(".pCard_card").toggleClass("pCard_on");
+                $(".pCard_add i").toggleClass("fa-minus");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
